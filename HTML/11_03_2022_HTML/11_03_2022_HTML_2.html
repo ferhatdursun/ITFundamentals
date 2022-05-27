@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+              border: 1px solid white;
+              border-radius: 10px; <!-- Tablonun dis cizgilerinin nasil olacagini belirliyor. radiusdan dolayi tablo kenarlari oval. Hepsi Table Borders basligi altinda.-->
+            }
+            th, td {
+              background-color: #96D4D4;
+              text-align: center;
+            }
+            #myHeader {
+                background-color: tomato;
+                color: white;
+                padding: 30px;
+                text-align: center;
+            }
+            .ferhat {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+            .fd 
+            {
+                background-color: chartreuse;
+                color: black;
+                text-align: center;
+            }
+            .wrapper {
+                 grid-row:2;
+                 grid-column:3;
+        
+            }
+            </style>
+    </head>
+    <body>
+        <p id="#fd">This is first para <!-- benim pc de calismiyor. normalde sayfanin en altinda ki linke tiklayinca sayfayi en üste getiriyor. -->
+            <h2 style="font-size:400px;"></h2>
+        </p>
+        <br>
+        <!-- Der Universalselektor *selektiert alle HTML-Elemente auf der Seite.
+             * {
+                margin: 0;
+                padding: 0;
+                  color: black;
+                }-->
+ 
+        <br>
+        <h1 class="ferhat"> Ferhat</h1> <!-- Burada yukarida tanimlanan class kullanildi. Deswegen tekrardan bu ayarlari burada yazmamiza gerek yok.
+        classlar birden fazla tanimlana biliyor ve kullanilabiliyor ama id bir kere kullaniliyor. -->
+        <p></p>
+        <br>
+        <br>
+        <h1 class="fd">Dursun</h1>
+        <br>
+        <br>
+       <p id="myHeader"> Ferhat Dursun</p> <!-- Burada üst de tanimlanan id kullanildi. Deshalb tekrardan bunlari burada yazmamiza gerek yok. -->
+        <p>
+
+        </p>
+        <table border="2" align="center" >
+            <tr>
+                <th>My Car</th>
+                <th>Bought Year</th>
+                <th>Sold Year</th>
+            </tr>
+            <tr>
+                <td>Tofas</td>
+                <td style="background-color: yellow; " style="width:70%">1995</td> <!-- Direk bir datanin rengini degistirme bu sekilde. Inline styling olarak adlandiriliyor. 
+                ikinci bir sey eklemek icin tekrar style=" " yaziyoruz.-->
+                <td style="width:30%;">2015</td> <!-- Burada ki width den dolayi tabloda üst satirda ki hücre digerine göre daha büyük -->
+            </tr>
+            <tr>
+                <td>Honda</td>
+                <td style="text-align: left;">2015 </td> <!-- table basliginin aldinda yeni renk vs ayarlari icin style="text ..." diye baslaniyor.-->
+                <td style="background-color: red;">2020</td><!-- Yukarida tüm tablolar icin renk ve digerlerini belirttigimiz halde burada her bir hücre tekrardan degistirilebilir. -->
+            </tr>
+            <tr>
+                <td>Mazda</td>
+                <td colspan="2">Still driving andaddasdsdasd</td>
+                <!-- Rowspan -->
+            </tr>
+        
+        <!--ID tanimalama Linux ta ki alias gibi
+        Kullanimi <h1 id="#myheader"> bu sekilde -->
+
+        <!-- CLASS -->
+        <!-- grup seklinde atamalar
+        <h1 class="city"> -->
+        <p></p>
+        <p>METALAR</p>
+        <!-- 
+        <meta charset="utf-8">
+        Web sayfasının başlığı (Title)        
+        Web sayfasinin tanimlanasi(Description);
+        <meta name="description" content="Bilgisayar Mühendisligi icin cok farkli yazilimlar ögrenilmelidir.">
+        Web sayfasinin anahtar kelimesi(Keywords);
+        <meta name="keywords" content="Linux,Python,Java"
+        Web sayfasinin yazari(Author);
+        <meta name="author" content="Ahmet Bayindir"-->
+        <p></p>
+        <a href="#fd">Go to top</a>
+        <p></p>
+        <p></p>
+        <form><!-- sayfanin icerinde select Element secim kutucuklari olusturmak icin. Form basliginin altina asagida ki gibi yaziliyor.-->
+                <p>This is a sample form</p>
+                <select>
+                        <option>HTML</option>
+                        <option>Python</option>
+                        <option>Linux</option>
+                        <option>CT</option>
+                        <option>Java</option>                        
+                </select>
+                <br>
+                <br>
+                <input list="lessons"><br>
+                <br>
+                <datalist> <!-- Selectten farkli olarak burada kullanici kutucuga istedigi kelimeyi girebilir. -->
+                    <option>HTML</option>
+                    <option>Python</option>
+                    <option>Linux</option>
+                    <option>CT</option>
+                    <option>Java</option>                        
+                </datalist>
+                <br>
+                Username:
+                <input type="text" name="username"><br> <!-- Kullanicidan username alma. -->
+                Password:
+                <input type="password" name="password"><br> <!-- Kullanicidan PW alma -->
+                <br>
+                <br>
+                <br>
+                <textarea rows="5" colums="70">Buraya istediginizi yazabilirsiniz.</textarea> <!-- Detayli bilgi sitede mevcut.-->
+        </form>
+        <br>
+        /* asdasd*/ yorum ekleme
+        */ asd /* yorum ekleme
+        <br>
+        <h1>The label element</h1>
+
+        <p> Clik on one of the text labels to toggle the related radio button:</p>
+        <form action="/action_page.php">
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+            <input type="submit" value="Submit">
+            <!-- Sayfa icerisinde ki seceneklerden birini secip en son Submit butonuna basilabilinecek ekranin olusturulmasi. -->                      
+        </form>
+        <br>
+        <br>
+        <br>
+        <form>
+            <p>Which days are you busy.</p>
+                        
+            <input type="checkbox" name="days" value="monday">
+            Monday<br>
+            <input type="checkbox" name="days" value="tuesday">
+            Tuesday<br>
+            <input type="checkbox" name="days" value="wedenesday">
+            Wednesday<br>
+            <input type="checkbox" name="days" value="thursday">
+            Thursday<br>            
+            <input type="checkbox" name="days" value="Friday">
+            Friday<br>
+            
+
+        </form>
+
+
+            
+
+
+
+
+
+    </body>
+<html>

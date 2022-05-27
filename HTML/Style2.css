@@ -1,0 +1,7 @@
+#header {
+    background-color: black;
+    border-bottom: 5px solit red;
+}
+header.contanier {color: white;}
+#header.nav {display:flex;float:left;}
+.nav2 {float:right}

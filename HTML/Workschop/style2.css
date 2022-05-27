@@ -1,0 +1,28 @@
+#header {background-color: black;
+border-bottom: 5px solid red;
+}
+#header .contanier { display: flex ;
+align-items: center;
+justify-content: space-between;
+}
+#header li { display: inline;
+padding: 0 20px;
+}
+#header a {color:white;
+text-align: right;
+text-decoration: none;
+}
+#baslik {color:white;}
+#resim {background-image: url("banner.jpg");
+height: 800px;
+background-size: cover;
+text-align: center;
+color:white;
+margin: 0px ;
+}
+#resim h1 {font-size: 50px;
+padding-top: 200px;
+}
+.yazi {margin-top: 0px;
+}
+#resim p {font-size: 35px;}
